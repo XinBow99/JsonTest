@@ -60,7 +60,9 @@ function SEA_BTN(BID) {
 
 $(document).ready(function(){
 	"use strict";
+	
     $("#s_bt").click(function(){
+		$(".col-md-4").remove();
         SEA_BTN($('#search').val());
     });
 		$(".col-md-4").remove();
