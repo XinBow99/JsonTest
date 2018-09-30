@@ -53,7 +53,7 @@ function SEA_BTN(BID) {
 	var item = S_S;
 	for (var i = 0, len = item.length; i < len; i++) {
 		if (item[i].FileNo_.match(BID) !== null || item[i].Status_.match(BID) !== null || item[i].Cre_Date_.match(BID) !== null || item[i].ReplyUnit_.match(BID) !== null || item[i].zipcode_.match(BID) !== null || item[i].ZipName_.match(BID) !== null || item[i].address_.match(BID) !== null || item[i].UnitName_.match(BID) !== null || item[i].StatusName_.match(BID) !== null || item[i].InformDesc_.match(BID) !== null || item[i].BeforeDesc_.match(BID) !== null || item[i].AfterDesc_.match(BID) !== null || item[i].Memo_.match(BID) !== null || item[i].Save_Date_.match(BID) !== null || item[i].Close_Date_.match(BID) !== null || item[i].Lat_.match(BID) !== null || item[i].Lng_.match(BID) !== null) {
-			$("#R_space").append('<div class="card col-md-4"> <div class="card-body"> <h5 class="card-title">' + item[i].ZipName_ + '</h5> <p class="card-text">' + item[i].BeforeDesc_ + '</p> <p class="card-text">' + item[i].address_ + '</p> <a href="#" class="btn btn-primary">' + item[i].UnitName_ + '</a> </div> </div>');
+			$("#R_space").append('div class="card col-md-4"> <div class="card-body"> <h5 class="card-title">' + item[i].ZipName_ + '</h5><p class="card-text">' + item[i].Save_Date_ + '</p> <p class="card-text">' + item[i].BeforeDesc_ + '</p> <p class="card-text">' + item[i].address_ + '</p> <a href="#" class="btn btn-primary">' + item[i].UnitName_ + '</a> </div> </div>);
 		}
 	}
 }
