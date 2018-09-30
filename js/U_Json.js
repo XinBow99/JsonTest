@@ -44,7 +44,7 @@ function AREA_BTN(BID) {
 				item[i].Lat_.match($('#search').val()) !== null || 
 				item[i].Lng_.match($('#search').val()) !== null){
 					var dv = '<div class="card col-md-4"> <div class="card-body"> <h5 class="card-title">' + item[i].ZipName_ + '</h5> <p class="card-text">' + item[i].BeforeDesc_ + '</p> <p class="card-text">' + item[i].address_ + '</p> <a href="#" class="btn btn-primary">' + item[i].UnitName_ + '</a> </div> </div>'
-			$("#R_space").append(dv.replace(BID,'<p style="color:red;">'+BID+'</p>'));
+			$("#R_space").append(dv.replace(BID,'<font color="FF00CC">'+BID+'</font>'));
 			}
 		}
 	}
